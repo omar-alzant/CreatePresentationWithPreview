@@ -54,6 +54,7 @@ body {
 
 
 .back-button {
+  position: fixed; bottom: 10px; left: 10px; 
   padding: 10px 20px;
   background-color: #4477aa;
   color: white;
