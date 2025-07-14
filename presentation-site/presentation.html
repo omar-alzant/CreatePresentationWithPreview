@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Presentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div style="display: flex; justify-content: center; gap: 50px; padding-block: 10px;">
+    <h1>My Presentation</h1>
+    <button id="back-to-editor" style="position: fixed; top: 10px; right: 10px; padding: 10px;">⬅️ Back to Editor</button>
+
+  </div>
+
+  <!-- Main card section -->
+  <div id="container">
+    <div id="card-container"></div>
+  </div>
+
+  <!-- Step detail view: moved OUTSIDE from inside #card-container-details -->
+  <div id="step-detail-view" style="display: none; text-align: center; padding: 20px;">
+    <h2 id="step-title"></h2>
+    <p id="step-content"></p>
+  </div>
+
+  <!-- Footer with back button -->
+  <footer id="page-footer"></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

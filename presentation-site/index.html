@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Presentation Builder</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body { font-family: sans-serif; margin: 2rem; }
+   
+  </style>
+</head>
+<body>
+
+  <h1>Create Presentation</h1>
+
+  <!-- Preview Area -->
+  <div class="preview" id="preview"></div>
+
+  <!-- Input Form -->
+  <div class="form">
+    <label>Title: <input id="titleInput"></label>
+    <label>Description: <textarea id="descInput"></textarea></label>
+
+    <div id="steps"></div>
+
+    <button onclick="addStep()">➕ Add Step</button>
+    <button onclick="saveSection()">💾 Save Section</button>
+    <button onclick="startNewSection()">➕ Add New Title</button>
+    <div class="lign">  </div>
+    <button onclick="SaveDataFromCreatePresPAge()"> 📥 Download data</button>
+    <label for="jsonUpload" style="display:inline-block; padding:10px 20px; background:#007bff; color:white; border-radius:5px; cursor:pointer;">
+      📤 Upload JSON
+    </label>
+    
+    <input type="file" id="jsonUpload" accept=".json" style="display: none;" />
+    <div class="lign">  </div>
+    <button onclick="startPresentation()">🎬 Start Presentation</button>
+  </div>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>

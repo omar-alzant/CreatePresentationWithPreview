@@ -1,0 +1,166 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f0f5;
+  padding: 2rem;
+  text-align: center;
+  border: no-border;
+}
+
+#step-content{
+  width: 70dvw;
+  overflow: auto;
+  justify-self: center;
+  background-color: #6791bb;}
+
+#page-footer {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+}
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  width: 200px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, background 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #dbeafe;
+}
+
+.card-description {
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+.card:hover .card-description {
+  opacity: 1;
+  max-height: 200px;
+  margin-top: 10px;
+}
+
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #4477aa;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #335588;
+}
+
+.details-list {
+  margin: 10px 0;
+  padding: 20px;
+}
+
+.card-container-details {
+  margin-inline-start: 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #132313; */
+  padding: 10px;
+}
+
+
+.details-list {
+  position: relative;
+
+  /* top: 50%; */
+  /* left: 35%; */
+  transform: translate(-50%, -50%);
+  list-style: none;
+  padding: 0;
+  margin: 50px;
+}
+
+.details-list li {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  background: white;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-weight: 500;
+  transform-origin: 0 100px; /* Radius of the circle */
+}
+.details-list li:hover{
+    cursor: pointer;
+    background-color: #6791bb;
+  
+} 
+
+
+.section, .step { margin-bottom: 1rem; }
+.preview { background: #f0f0f0; padding: 1rem; margin-bottom: 2rem; }
+input, textarea { display: block; margin-top: 5px; width: 100%; padding: 5px; }
+button { margin-top: 10px; padding: 10px 20px; margin-right: 5px; }
+.steps-container { margin-left: 1rem; }
+.toolbar button {
+  margin: 2px;
+  padding: 6px 10px;
+}
+.step-html {
+  background: #f8f8f8;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ddd;
+}
+.editor {
+  border: 1px solid #ccc;
+  min-height: 100px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.lign{
+  display: flex;
+  justify-self: center;
+  border: 1px solid #ddd;
+  width: 60dvw;
+  margin: 5px;
+  margin-top: 10px;
+  /* height: 1px; */
+}
+button {
+padding: 10px 20px;
+background-color: #6a92bb;
+color: white;
+font-size: 16px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #525252;
+}
+
+#titleInput, #descInput, .step-title{
+  display: flex;
+  justify-self: center;
+  max-width: 50dvw;
+}
