@@ -8,4 +8,4 @@
 NOTE: If you refresh the page, you will 🧹lose all data entered because we use the local storage to save the data 🥲. 
 
 
-You can visit our website on [click here 🚀](https://google.com)
+You can visit our website on [click here 🚀]([https://google.com](https://ojz-presentationpreview.netlify.app/presentation.html))
